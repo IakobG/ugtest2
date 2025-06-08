@@ -1,0 +1,60 @@
+/* Reset and base styles */
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+/* Projects Section */
+
+
+.projects {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.project-grid {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px; */
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+@media (max-width: 875px) {
+  .project-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .project-grid{
+    grid-template-columns: 1fr;
+  }
+}
+
+.project {
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.project img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+.project h3 {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
